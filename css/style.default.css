@@ -202,9 +202,10 @@ SERVICES SECTION
 }
 
 .services .icon {
-  font-size: 100px;
+  font-size: 150px;
   color: #262626;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 
