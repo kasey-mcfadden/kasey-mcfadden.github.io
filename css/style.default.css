@@ -219,6 +219,9 @@ PROJECTS SECTION
 
 .projimg {
   border-radius: 7%;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
 }
 
 /*
