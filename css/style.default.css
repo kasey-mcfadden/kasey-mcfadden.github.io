@@ -217,10 +217,18 @@ PROJECTS SECTION
 *
 */
 
+.proj {
+  padding: 15px; 
+  border-radius: 3%;
+  background-color: #83cdeb9c;
+}
+
 .projimg {
   border-radius: 7%;
   vertical-align: middle;
   margin: auto;
+  max-width: 135px; 
+  max-height: 135px;
   text-align: center;
 }
 
