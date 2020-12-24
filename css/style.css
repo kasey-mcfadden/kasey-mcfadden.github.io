@@ -1,0 +1,137 @@
+/*--------------------------------------------------------------------*/
+/* style.css                                                          */
+/* Author: Kasey McFadden                                             */
+/*--------------------------------------------------------------------*/
+
+/* Element rules */
+td {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+body {
+  font-family: 'Roboto Mono';
+  background-image: linear-gradient(270deg, #0a214d, #094226);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/*--------------------------------------------------------------------*/
+
+/* Class rules */
+
+.nameContainer {
+  max-width: 100%; 
+  position: relative; 
+  margin-top: 4%;
+}
+
+.nameText {
+  text-align: center;
+  color: rgba(255,255,255,0.6); 
+  font-size: 70px;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.75rem 1.5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btnContainer {
+  text-align: center;
+}
+
+.main {
+  font-family: 'Roboto Mono', monospace;
+  display: block;
+  text-align: center;
+  margin-left: 7%;
+  margin-right: 7%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.info {
+  color:#ffa600;
+  width: 20%;
+  vertical-align: baseline;
+  text-align: left;
+  padding-left: 4%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.infoText {
+  font-family: 'Roboto Mono', monospace;
+  font-size:18px;
+  font-weight: normal;
+  padding-left:10px;
+  padding-right:15px;
+  width:85%;
+  text-align:left;
+  color:rgba(255, 255, 255, 0.8);
+  display:table-cell;
+}
+
+.linkText {
+  color: #E65C63;
+}
+
+.linkText:hover {
+  color: #E65C63;
+  text-decoration: none;
+}
+
+.proj {
+  padding-bottom: 10px;
+}
+
+.projText {
+  color:#00BC96;
+  font-weight: bold;
+}
+
+.projText:hover {
+  color:#00BC96;
+  /* color: #601cff; */
+  text-decoration: none;
+}
