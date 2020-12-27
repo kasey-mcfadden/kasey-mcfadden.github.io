@@ -11,7 +11,7 @@ td {
 
 body {
   font-family: 'Roboto Mono';
-  background-image: linear-gradient(270deg, #1b51c4, #18a7a7);
+  background-image: linear-gradient(270deg, #1b51c4, #128383);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 10s ease infinite;
@@ -40,21 +40,29 @@ body {
 /* Class rules */
 
 .nameContainer {
+  text-align: center;
   max-width: 100%; 
   position: relative; 
   margin-top: 4%;
 }
 
 .nameText {
-  text-align: center;
+  font-family: 'Roboto Mono', monospace;
   color: rgba(255,255,255,0.6); 
-  font-size: 70px;
+  font-size: 80px;
+  font-weight: bolder;
   display: block;
+}
+
+.nameText:hover {
+  color: rgba(255,255,255,0.7); 
 }
 
 .btn {
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  font-weight: bold;
   padding: 0.75rem 1.5rem;
   margin-left: 2%;
   margin-right: 2%;
@@ -86,12 +94,12 @@ body {
   text-align: center;
   margin-left: 7%;
   margin-right: 7%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
 .info {
-  color:#ffa600;
+  color: #956af8;
   width: 20%;
   vertical-align: baseline;
   text-align: left;
@@ -117,8 +125,12 @@ body {
 }
 
 .linkText:hover {
-  color: #E65C63;
+  color: #e65c63c5;
   text-decoration: none;
+}
+
+.eduText {
+  color: #f58025;
 }
 
 .proj {
@@ -126,12 +138,11 @@ body {
 }
 
 .projText {
-  color:#00BC96;
+  color: #00BC96;
   font-weight: bold;
 }
 
 .projText:hover {
-  color:#00BC96;
-  /* color: #601cff; */
+  color: #00BC96c5;
   text-decoration: none;
 }
