@@ -3,7 +3,12 @@
 /* Author: Kasey McFadden                                             */
 /*--------------------------------------------------------------------*/
 
+/* Custom fonts */
+
+@font-face { font-family: Princeton; src: url('vendor/PrinceMontiDSOSRegular.ttf'); }
+
 /* Element rules */
+
 td {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -14,25 +19,31 @@ body {
   background-image: linear-gradient(270deg, #1b51c4, #128383);
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  -o-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0%{background-position:84% 0%}
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0%}
 }
 @-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0%{background-position:84% 0%}
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:84% 0%}
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0%}
 }
 @keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0%{background-position:84% 0%}
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0%}
 }
 
 /*--------------------------------------------------------------------*/
