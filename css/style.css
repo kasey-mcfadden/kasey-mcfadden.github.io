@@ -15,6 +15,7 @@ td {
 }
 
 body {
+  height: 100%;
   font-family: 'Roboto Mono';
   background-image: linear-gradient(270deg, #1b51c4, #128383);
   background-size: 400% 400%;
@@ -50,11 +51,19 @@ body {
 
 /* Class rules */
 
-.nameContainer {
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  max-width: 100%; 
-  position: relative; 
-  margin-top: 8%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.nameContainer {
+  margin-bottom: 10px;
 }
 
 .nameText {
@@ -62,30 +71,32 @@ body {
   color: rgba(255,255,255,0.6); 
   font-size: 60px;
   font-weight: bolder;
-  display: block;
 }
 
 .nameText:hover {
   color: rgba(255,255,255,0.7); 
 }
 
+.bioText {
+  color: rgba(255,255,255,0.6);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .btn {
-  display: inline-block;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   font-weight: bold;
   padding: 0.55rem 1.25rem;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin: 8px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 3px;
   border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 .btn:hover {
@@ -96,7 +107,9 @@ body {
 }
 
 .btnContainer {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
 
 .main {
