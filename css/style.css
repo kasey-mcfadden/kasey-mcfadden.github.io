@@ -7,6 +7,12 @@
 
 @font-face { font-family: Princeton; src: url('vendor/PrinceMontiDSOSRegular.ttf'); }
 
+/* Global box-sizing for better responsiveness */
+
+* {
+  box-sizing: border-box;
+}
+
 /* Element rules */
 
 td {
@@ -38,8 +44,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
   margin: 0;
 }
 
@@ -98,8 +105,8 @@ body {
   font-family: 'Roboto Mono', monospace;
   display: block;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 1rem auto;
+  max-width: 800px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
@@ -151,4 +158,15 @@ body {
 .projText:hover {
   color: #00BC96c5;
   text-decoration: none;
+}
+
+/* Responsive font adjustments */
+
+@media (max-width: 576px) {
+  .nameText {
+    font-size: 36px;
+  }
+  .bioText {
+    font-size: 16px;
+  }
 }

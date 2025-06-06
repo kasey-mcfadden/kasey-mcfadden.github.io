@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
+    <style>
+      @media (max-width: 576px) {
+        .btnContainer a.btn {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -33,51 +41,53 @@
       </div>
 
       <div class="main">
-        <table>
-          <tr>
-            <td class="info">
-              ME
-            </td>
-            <td class="infoText"> 
-              Full Stack Software Engineer at Microsoft with 7+ years of experience building and shipping high-impact applications. Passionate about clean code, documentation, and continuous learning. Former <a class="linkText" target="_blank" href="https://outdooraction.princeton.edu/">orientation</a> leader and walk-on <a class="linkText" target="_blank" href="https://goprincetontigers.com/sports/mens-rowing">rower</a>. Big fan of running, mountains, DIY-ing.
-            </td>
-          </tr>
-          
-          <tr>
-            <td class="info">
-              EDUCATION
-            </td>
-            <td class="infoText"> 
-              <text class="eduText">Princeton University</text>, May 2022
-              <br>
-              <text class="eduText">B.S.E. Computer Science</text>
-            </td>
-          </tr>
+        <div class="table-responsive"> <!-- added responsive wrapper -->
+          <table>
+            <tr>
+              <td class="info">
+                ME
+              </td>
+              <td class="infoText"> 
+                Full Stack Software Engineer at Microsoft with 7+ years of experience building and shipping high-impact applications. Passionate about clean code, documentation, and continuous learning. Former <a class="linkText" target="_blank" href="https://outdooraction.princeton.edu/">orientation</a> leader and walk-on <a class="linkText" target="_blank" href="https://goprincetontigers.com/sports/mens-rowing">rower</a>. Big fan of running, mountains, DIY-ing.
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="info">
+                EDUCATION
+              </td>
+              <td class="infoText"> 
+                <text class="eduText">Princeton University</text>, May 2022
+                <br>
+                <text class="eduText">B.S.E. Computer Science</text>
+              </td>
+            </tr>
 
-          <tr>
-            <td class="info">
-              PROJECTS
-            </td>
-            <td class="infoText"> 
+            <tr>
+              <td class="info">
+                PROJECTS
+              </td>
+              <td class="infoText"> 
 
-              <div class="proj">
-                <a class="projText" target="_blank" href="https://tigerapps.org/">TigerStudy</a>,
-                a group finder built for Princeton's McGraw Center. Still in active use by students.
-              </div>
+                <div class="proj">
+                  <a class="projText" target="_blank" href="https://tigerapps.org/">TigerStudy</a>,
+                  a group finder built for Princeton's McGraw Center. Still in active use by students.
+                </div>
 
-              <div class="proj">
-                <a class="projText" target="_blank" href="https://github.com/kasey-mcfadden/arc">Adaptive Replacement Cache</a>,
-                implemented in Golang. ARC optimizes to favor either recency or frequency, improving caching performance (i.e. hit ratio).
-                Paper <a class="projText" target="_blank" href="https://drive.google.com/file/d/1eDuY4-sJTw0rg45npS-vLjmFB8bO05I_/view">here</a>.
-              </div>
+                <div class="proj">
+                  <a class="projText" target="_blank" href="https://github.com/kasey-mcfadden/arc">Adaptive Replacement Cache</a>,
+                  implemented in Golang. ARC optimizes to favor either recency or frequency, improving caching performance (i.e. hit ratio).
+                  Paper <a class="projText" target="_blank" href="https://drive.google.com/file/d/1eDuY4-sJTw0rg45npS-vLjmFB8bO05I_/view">here</a>.
+                </div>
 
-              <div class="proj">
-                <a class="projText" target="_blank" href="https://kasey-mcfadden.github.io/hack_ru/">Merck-Map</a>,
-                an interactive map-based data visualization model that sorts data from Merck's Blockchain API (1st Place, Merck Blockchain API Challenge @ HackRU).
-              </div>
-            </td>
-          </tr>
-        </table>
+                <div class="proj">
+                  <a class="projText" target="_blank" href="https://kasey-mcfadden.github.io/hack_ru/">Merck-Map</a>,
+                  an interactive map-based data visualization model that sorts data from Merck's Blockchain API (1st Place, Merck Blockchain API Challenge @ HackRU).
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
