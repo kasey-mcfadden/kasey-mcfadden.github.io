@@ -51,13 +51,13 @@ body {
 }
 
 .nameContainer {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .nameText {
   font-family: 'Roboto Mono', monospace;
   color: rgba(255,255,255,0.6); 
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bolder;
 }
 
@@ -106,7 +106,7 @@ body {
   display: block;
   text-align: center;
   margin: 1rem auto;
-  max-width: 800px;
+  max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
