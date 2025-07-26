@@ -52,13 +52,11 @@ body {
 
 .nameContainer {
   margin-bottom: 5px;
-  max-width: 1000px; /* adjust the value as needed */
   height: auto;
 }
 
 .nameImage {
-  width: 100%;
-  max-width: 800px;
+  max-width: 80%;
   height: auto;
 }
 
@@ -69,39 +67,22 @@ body {
   font-weight: bolder;
 }
 
-.nameText:hover {
-  /* color: rgba(255,255,255,0.7);  */
-}
-
 .bioContainer {
   margin-bottom: 10px;
 }
 
 .bioImage {
-  width: 100%;
-  max-width: 300px;
+  max-width: 30%;
   height: auto;
 }
 
 .btn {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
-  font-weight: bold;
-  /* padding: 0.55rem 1.25rem; */
-  margin-top: 10px;
-  margin-inline: 30px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 0.3rem;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  margin: 0;
+  padding: 0.375rem 0.75rem;
 }
 
 .btnImage {
-  width: 100%;
-  max-width: 150px;
+  max-width: 13rem;
   height: auto;
 }
 
@@ -114,6 +95,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: center;
+  gap: 60px;
 }
 
 .main {
@@ -122,20 +104,15 @@ body {
   text-align: center;
   margin: 1rem auto;
   max-width: 1000px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* border-radius: 10px; */
 }
 
 .infoImageContainer {
-  /* width: 20%; */
-  /* padding-right: 10px; */
   vertical-align: baseline;
   padding-left: 4%;
 }
 
 .infoImage {
-  width: 100%;
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
