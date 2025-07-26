@@ -55,7 +55,8 @@ img {
 }
 
 .nameImage {
-  max-width: 60rem;
+  width: 100%;
+  max-width: 50rem;
   height: auto;
 }
 
