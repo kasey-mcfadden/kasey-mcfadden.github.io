@@ -23,15 +23,13 @@ td {
 body {
   height: 100%;
   font-family: 'Roboto Mono';
-  /* background-image: linear-gradient(270deg, #1b51c4, #128383); */
-  background-size: 400% 400%;
-  animation: AnimationName 9s ease infinite;
 }
 
-@keyframes AnimationName {
-  0%{background-position:84% 0%}
-  50%{background-position:17% 100%}
-  100%{background-position:84% 0%}
+/* Ensure all <img> elements scale responsively */
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------------*/
@@ -51,12 +49,13 @@ body {
 }
 
 .nameContainer {
+  width: 100%;
   margin-bottom: 5px;
   height: auto;
 }
 
 .nameImage {
-  max-width: 80%;
+  max-width: 60rem;
   height: auto;
 }
 
@@ -68,34 +67,32 @@ body {
 }
 
 .bioContainer {
+  width: 100%;
   margin-bottom: 10px;
 }
 
 .bioImage {
-  max-width: 30%;
+  max-width: 20rem;
   height: auto;
 }
 
-.btn {
-  margin: 0;
-  padding: 0.375rem 0.75rem;
+.btnContainer {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .btnImage {
-  max-width: 13rem;
+  width: 100%;
+  max-width: 15rem;
   height: auto;
 }
 
 .btn:hover img{
   filter: invert(31%) sepia(74%) saturate(1990%) hue-rotate(192deg) brightness(93%) contrast(103%);
-}
-
-.btnContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  gap: 60px;
 }
 
 .main {
