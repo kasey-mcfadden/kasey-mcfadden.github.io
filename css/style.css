@@ -23,7 +23,7 @@ td {
 body {
   height: 100%;
   font-family: 'Roboto Mono';
-  background-image: linear-gradient(270deg, #1b51c4, #128383);
+  /* background-image: linear-gradient(270deg, #1b51c4, #128383); */
   background-size: 400% 400%;
   animation: AnimationName 9s ease infinite;
 }
@@ -52,21 +52,29 @@ body {
 
 .nameContainer {
   margin-bottom: 5px;
+  max-width: 1000px; /* adjust the value as needed */
+  height: auto;
+}
+
+.nameImage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;;
 }
 
 .nameText {
   font-family: 'Roboto Mono', monospace;
-  color: rgba(255,255,255,0.6); 
+  color: black;
   font-size: 45px;
   font-weight: bolder;
 }
 
 .nameText:hover {
-  color: rgba(255,255,255,0.7); 
+  /* color: rgba(255,255,255,0.7);  */
 }
 
 .bioText {
-  color: rgba(255,255,255,0.6);
+  color: black;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -78,8 +86,8 @@ body {
   font-weight: bold;
   padding: 0.55rem 1.25rem;
   margin: 8px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.08);
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 3px;
@@ -88,9 +96,9 @@ body {
 }
 
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -107,8 +115,8 @@ body {
   text-align: center;
   margin: 1rem auto;
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 10px; */
 }
 
 .info {
@@ -121,6 +129,12 @@ body {
   font-weight: bolder;
 }
 
+.infoImage {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
 .infoText {
   font-family: 'Roboto Mono', monospace;
   font-size:16px;
@@ -129,7 +143,7 @@ body {
   padding-right:15px;
   width:85%;
   text-align:left;
-  color:rgba(255, 255, 255, 0.8);
+  color:black;
   display:table-cell;
 }
 

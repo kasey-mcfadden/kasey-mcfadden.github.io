@@ -1,1 +1,1 @@
-# [kaseym.dev](https://kaseym.dev)
+# [kaseym.com](https://kaseym.com)
