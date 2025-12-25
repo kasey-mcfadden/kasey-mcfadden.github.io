@@ -3,10 +3,6 @@
 /* Author: Kasey McFadden                                             */
 /*--------------------------------------------------------------------*/
 
-/* Custom fonts */
-
-@font-face { font-family: Princeton; src: url('vendor/PrinceMontiDSOSRegular.ttf'); }
-
 /* Global box-sizing for better responsiveness */
 
 * {
@@ -58,13 +54,6 @@ img {
   width: 100%;
   max-width: 50rem;
   height: auto;
-}
-
-.nameText {
-  font-family: 'Roboto Mono', monospace;
-  color: black;
-  font-size: 45px;
-  font-weight: bolder;
 }
 
 .bioContainer {
@@ -153,13 +142,11 @@ img {
   text-decoration: none;
 }
 
-/* Responsive font adjustments */
+/* Responsive adjustments */
 
 @media (max-width: 576px) {
-  .nameText {
-    font-size: 36px;
-  }
-  .bioText {
-    font-size: 16px;
+  .btnContainer a.btn {
+    display: block;
+    margin: 5px 0;
   }
 }
