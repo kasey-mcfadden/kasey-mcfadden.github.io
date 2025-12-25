@@ -81,7 +81,12 @@ img {
   height: auto;
 }
 
-.btn:hover img{
+.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover img {
   filter: invert(31%) sepia(74%) saturate(1990%) hue-rotate(192deg) brightness(93%) contrast(103%);
 }
 
@@ -91,6 +96,7 @@ img {
   text-align: center;
   margin: 1rem auto;
   max-width: 1000px;
+  overflow-x: auto;
 }
 
 .infoImageContainer {
@@ -145,8 +151,12 @@ img {
 /* Responsive adjustments */
 
 @media (max-width: 576px) {
-  .btnContainer a.btn {
-    display: block;
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnContainer .btn {
     margin: 5px 0;
   }
 }
