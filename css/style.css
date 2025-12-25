@@ -11,11 +11,6 @@
 
 /* Element rules */
 
-td {
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 body {
   height: 100%;
   font-family: 'Roboto Mono';
@@ -92,33 +87,27 @@ img {
 
 .main {
   font-family: 'Roboto Mono', monospace;
-  display: block;
-  text-align: center;
   margin: 1rem auto;
   max-width: 1000px;
-  overflow-x: auto;
+  padding: 0 1rem;
 }
 
-.infoImageContainer {
-  vertical-align: baseline;
-  padding-left: 4%;
+.infoSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.infoImage {
-  max-width: 100%;
-  height: auto;
+.infoIcon {
+  flex-shrink: 0;
+  width: 80px;
 }
 
-.infoText {
-  font-family: 'Roboto Mono', monospace;
-  font-size:16px;
-  font-weight: normal;
-  padding-left:30px;
-  padding-right:15px;
-  width:85%;
-  text-align:left;
-  color:black;
-  display:table-cell;
+.infoContent {
+  font-size: 16px;
+  text-align: left;
+  color: black;
 }
 
 .linkText {
@@ -158,5 +147,15 @@ img {
 
   .btnContainer .btn {
     margin: 5px 0;
+  }
+
+  .infoSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoContent {
+    text-align: center;
   }
 }
