@@ -3,6 +3,15 @@
 /* Author: Kasey McFadden                                             */
 /*--------------------------------------------------------------------*/
 
+/* Color palette */
+:root {
+  --color-link: #E65C63;
+  --color-link-hover: #e65c63c5;
+  --color-edu: #f58025;
+  --color-proj: #00BC96;
+  --color-proj-hover: #00BC96c5;
+}
+
 /* Self-hosted font */
 @font-face {
   font-family: 'Roboto Mono';
@@ -120,16 +129,16 @@ img {
 }
 
 .linkText {
-  color: #E65C63;
+  color: var(--color-link);
 }
 
 .linkText:hover {
-  color: #e65c63c5;
+  color: var(--color-link-hover);
   text-decoration: none;
 }
 
 .eduText {
-  color: #f58025;
+  color: var(--color-edu);
 }
 
 .proj {
@@ -137,12 +146,12 @@ img {
 }
 
 .projText {
-  color: #00BC96;
+  color: var(--color-proj);
   font-weight: bold;
 }
 
 .projText:hover {
-  color: #00BC96c5;
+  color: var(--color-proj-hover);
   text-decoration: none;
 }
 
