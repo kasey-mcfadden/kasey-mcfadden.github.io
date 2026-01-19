@@ -30,7 +30,7 @@
 /* Element rules */
 
 body {
-  height: 100%;
+  margin: 0;
   font-family: 'Roboto Mono';
 }
 
@@ -52,8 +52,11 @@ img {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   padding: 1rem;
+  padding-top: calc(1rem + env(safe-area-inset-top));
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
   margin: 0;
 }
 
@@ -65,7 +68,7 @@ img {
 
 .nameImage {
   width: 100%;
-  max-width: 50rem;
+  max-width: 42rem;
   height: auto;
 }
 
@@ -85,12 +88,12 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 28px;
 }
 
 .btnImage {
   width: 100%;
-  max-width: 15rem;
+  max-width: 12rem;
   height: auto;
 }
 
@@ -158,22 +161,59 @@ img {
 /* Responsive adjustments */
 
 @media (max-width: 576px) {
+  .content {
+    /* Prevent flex centering from feeling "stuck" on short viewports */
+    justify-content: flex-start;
+    padding: 0.5rem;
+    padding-top: calc(0.5rem + env(safe-area-inset-top));
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+
+  .bioContainer {
+    margin-bottom: 6px;
+  }
+
   .btnContainer {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    gap: 14px;
   }
 
   .btnContainer .btn {
-    margin: 5px 0;
+    margin: 0;
+  }
+
+  .btnImage {
+    max-width: 9.5rem;
+  }
+
+  .main {
+    margin: 0.5rem auto;
   }
 
   .infoSection {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
   }
 
   .infoContent {
     text-align: center;
+    line-height: 1.45;
+    max-width: 34ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Standardize section icon sizing across different SVG aspect ratios */
+  .infoIcon {
+    height: 64px;
+    width: auto;
+    max-width: 100%;
   }
 }
