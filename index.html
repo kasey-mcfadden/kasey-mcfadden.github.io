@@ -11,6 +11,9 @@
   <title>Kasey McFadden</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+  </script>
   <link rel="preload" href="static/sketched_name.svg" as="image" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -29,6 +32,10 @@
 </head>
 
 <body>
+  <button class="themeToggle" type="button" aria-label="Toggle night mode">
+    <img class="moonIcon" src="static/sketched_moon.svg" alt="" width="392" height="526">
+    <img class="sunIcon" src="static/sketched_sun.svg" alt="" width="541" height="558">
+  </button>
   <div class="content">
     <div class="nameContainer">
       <img class="nameImage" src="static/sketched_name.svg" alt="Kasey McFadden" width="1496" height="177"
@@ -111,6 +118,12 @@
       </section>
     </main>
   </div>
+  <script>
+    document.querySelector('.themeToggle').addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    });
+  </script>
 </body>
 
 </html>

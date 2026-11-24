@@ -41,6 +41,44 @@ img {
   height: auto;
 }
 
+/* Night mode: every drawing is black ink on transparent, so inverting turns it white. */
+html.dark body {
+  background: black;
+  color: white;
+}
+
+html.dark img {
+  filter: invert(1);
+}
+
+.themeToggle {
+  position: absolute;
+  top: calc(1rem + env(safe-area-inset-top));
+  right: 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.themeToggle img {
+  height: 2rem;
+  width: auto;
+}
+
+.themeToggle:hover img {
+  filter: invert(31%) sepia(74%) saturate(1990%) hue-rotate(192deg) brightness(93%) contrast(103%);
+}
+
+.themeToggle .sunIcon,
+html.dark .themeToggle .moonIcon {
+  display: none;
+}
+
+html.dark .themeToggle .sunIcon {
+  display: inline-block;
+}
+
 /*--------------------------------------------------------------------*/
 
 /* Class rules */
@@ -128,7 +166,6 @@ img {
 .infoContent {
   font-size: 16px;
   text-align: left;
-  color: black;
 }
 
 .linkText {
@@ -187,8 +224,17 @@ img {
     /* Prevent flex centering from feeling "stuck" on short viewports */
     justify-content: flex-start;
     padding: 0.5rem;
-    padding-top: calc(0.5rem + env(safe-area-inset-top));
+    padding-top: calc(2.75rem + env(safe-area-inset-top));
     padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+
+  .themeToggle {
+    top: calc(0.5rem + env(safe-area-inset-top));
+    right: 0.5rem;
+  }
+
+  .themeToggle img {
+    height: 1.75rem;
   }
 
   .bioContainer {
