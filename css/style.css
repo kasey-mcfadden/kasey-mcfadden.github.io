@@ -126,7 +126,7 @@ html.dark .themeToggle .sunIcon {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 28px;
+  gap: 40px;
 }
 
 .btnImage {
@@ -146,7 +146,7 @@ html.dark .themeToggle .sunIcon {
 
 .main {
   font-family: 'Roboto Mono', monospace;
-  margin: 1rem auto;
+  margin: 2.5rem auto 1rem;
   max-width: 1000px;
   padding: 0 1rem;
 }
@@ -170,11 +170,13 @@ html.dark .themeToggle .sunIcon {
 
 .linkText {
   color: var(--color-link);
+  text-decoration: none;
 }
 
-.linkText:hover {
+.linkText:hover,
+.linkText:focus-visible {
   color: var(--color-link-hover);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .eduText {
@@ -210,11 +212,13 @@ html.dark .themeToggle .sunIcon {
 .projText {
   color: var(--color-proj);
   font-weight: bold;
+  text-decoration: none;
 }
 
-.projText:hover {
+.projText:hover,
+.projText:focus-visible {
   color: var(--color-proj-hover);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Responsive adjustments */
@@ -247,7 +251,7 @@ html.dark .themeToggle .sunIcon {
     align-items: center;
     margin-top: 0.75rem;
     margin-bottom: 1rem;
-    gap: 14px;
+    gap: 20px;
   }
 
   .btnContainer .btn {
