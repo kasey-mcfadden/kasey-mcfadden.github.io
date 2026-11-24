@@ -145,37 +145,29 @@ img {
 }
 
 .proj {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding-bottom: 14px;
 }
 
-/* Empty third column mirrors the label so the drawings center on the page. */
-.projSection {
-  display: grid;
-  grid-template-columns: 80px 1fr 80px;
-  align-items: start;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.projTiles {
+/* Fixed box so the text lines up regardless of each drawing's aspect ratio. */
+.projDrawing {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5.5rem;
+  width: 3.5rem;
 }
 
-.projTile {
-  flex-shrink: 0;
-}
-
-.projTile img {
+.projDrawing img {
   width: auto;
-  max-width: none;
-  height: 7.5rem;
+  max-width: 100%;
+  height: 2.75rem;
+  object-fit: contain;
 }
 
-.projTile:hover img {
-  filter: invert(31%) sepia(74%) saturate(1990%) hue-rotate(192deg) brightness(93%) contrast(103%);
+.projDrawing:hover img {
+  opacity: 0.7;
 }
 
 .projText {
@@ -189,17 +181,6 @@ img {
 }
 
 /* Responsive adjustments */
-
-@media (max-width: 880px) {
-  .projSection {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .projTiles {
-    gap: 3rem;
-  }
-}
 
 @media (max-width: 576px) {
   .content {
@@ -258,16 +239,8 @@ img {
     max-width: 100%;
   }
 
-  .projSection {
-    gap: 0.6rem;
-    margin-bottom: 1rem;
-  }
-
-  .projTiles {
-    gap: 1.5rem;
-  }
-
-  .projTile img {
-    height: 4.5rem;
+  .proj {
+    flex-direction: column;
+    gap: 0.4rem;
   }
 }
